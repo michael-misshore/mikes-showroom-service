@@ -9,3 +9,7 @@ end
 get '/' do
   erb :index
 end
+
+get '/services' do
+  erb :services
+end
