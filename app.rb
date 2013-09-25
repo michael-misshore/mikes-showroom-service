@@ -10,6 +10,6 @@ get '/' do
   erb :index
 end
 
-get '/services' do
-  erb :services
+get '/packages' do
+  erb :packages
 end
