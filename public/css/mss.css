@@ -1,0 +1,26 @@
+p.service-preview {
+  padding: 0px;
+}
+
+p.service-preview img {
+  border: 5px solid black;
+}
+
+p.service-preview img.full {
+  height: 180px;
+  width: 260px;
+}
+
+p.service-preview a.before {
+  margin-right: -4px;
+}
+
+p.service-preview a.before img {
+  border-right: 0px;
+}
+
+p.service-preview a.before img,
+p.service-preview a.after img {
+  height: 180px;
+  width: 185px;
+}
