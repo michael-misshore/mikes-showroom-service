@@ -6,7 +6,7 @@ p.service-preview img {
   border: 5px solid black;
 }
 
-p.service-preview img.full {
+p.service-preview a.full img {
   height: 180px;
   width: 260px;
 }
