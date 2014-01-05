@@ -24,3 +24,29 @@ p.service-preview a.after img {
   height: 180px;
   width: 185px;
 }
+
+/* Layout */
+
+.jumbotron {
+  background-color: rgba(100, 100, 100, 0.6);
+  height: inherit;
+}
+
+.jumbotron-wrapper {
+  background: url('../img/layout/jumbotron-bg.jpg');
+  background-size: 1170px 500px;
+  background-repeat: no-repeat;
+  background-position: 0px -20px;
+  border-radius: 6px;
+  width: 1170px;
+}
+
+.jumbotron h1 {
+  /*letter-spacing: 3px;*/
+}
+
+.jumbotron h1,
+.jumbotron p.lead {
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
