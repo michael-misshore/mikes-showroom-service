@@ -27,6 +27,29 @@ p.service-preview a.after img {
 
 /* Layout */
 
+#layout-root-link {
+  width: 500px;
+}
+
+#layout-root-link a:active,
+#layout-root-link a:visited,
+#layout-root-link a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+#layout-root-link .logo {
+  width: 68px;
+  height: 40px;
+  float: left;
+  border: 1px solid #e5e5e5;
+}
+
+#layout-root-link .muted {
+  position: relative;
+  left: 8px;
+}
+
 .jumbotron {
   background-color: rgba(100, 100, 100, 0.6);
   height: inherit;
