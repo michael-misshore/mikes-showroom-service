@@ -16,7 +16,11 @@ p.service-preview a.before {
 }
 
 p.service-preview a.before img {
-  border-right: 0px;
+  border-right: 2.5px solid black;
+}
+
+p.service-preview a.after img {
+  border-left: 2.5px solid black;
 }
 
 p.service-preview a.before img,
