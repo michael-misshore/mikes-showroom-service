@@ -19,17 +19,18 @@
   <body>
     <div class="container">
       <div class="header">
-        <ul class="nav nav-pills pull-right">
+        <h3 class="muted pull-right">
+          <img src="/img/layout/logo.jpg" alt="Mike's Showroom Service" class="logo" />
+          Mike's Showroom Service
+        </h3>
+
+        <ul class="nav nav-pills">
           <li<%= ' class="active"' if request.path == '/' %>><a href="/">Home</a></li>
           <li<%= ' class="active"' if request.path == '/services' %>><a href="/services">Services</a></li>
           <li<%= ' class="active"' if request.path == '/packages' %>><a href="/packages">Packages</a></li>
           <li><a href="https://www.facebook.com/MikesShowroomService/photos_albums" target="_blank">Work</a></li>
           <li><a href="mailto:mmisshore@gmail.com?subject=General Inquiry">Contact</a></li>
         </ul>
-        <div id="layout-root-link">
-          <img src="/img/layout/logo.jpg" alt="Mike's Showroom Service" class="logo" />
-          <h3 class="muted">Mike's Showroom Service</h3>
-        </div>
       </div>
 
       <%= yield %>
