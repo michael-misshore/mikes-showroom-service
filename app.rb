@@ -3,6 +3,8 @@ require 'sinatra'
 
 configure :production do
   require 'newrelic_rpm'
+
+  set :static_cache_control, [:public, :max_age => 60 * 60 * 24 * 7]
 end
 
 
