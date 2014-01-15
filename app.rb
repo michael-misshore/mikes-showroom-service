@@ -19,3 +19,7 @@ end
 get '/packages' do
   erb :packages
 end
+
+get '/contact' do
+  erb :contact
+end

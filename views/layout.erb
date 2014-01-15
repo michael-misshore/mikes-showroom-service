@@ -26,7 +26,7 @@
           <li<%= ' class="active"' if request.path == '/services' %>><a href="/services">Services</a></li>
           <li<%= ' class="active"' if request.path == '/packages' %>><a href="/packages">Packages</a></li>
           <li><a href="https://www.facebook.com/MikesShowroomService/photos_albums" target="_blank">Work</a></li>
-          <li><a href="mailto:mmisshore@gmail.com?subject=General Inquiry">Contact</a></li>
+          <li<%= ' class="active"' if request.path == '/contact' %>><a href="/contact">Contact</a></li>
         </ul>
       </div>
 
