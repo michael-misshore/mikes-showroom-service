@@ -1,6 +1,10 @@
 #!/usr/bin/env ruby
 require 'sinatra'
 
+configure :development do
+  require 'pry'
+end
+
 configure :production do
   require 'newrelic_rpm'
 
@@ -21,5 +25,9 @@ get '/packages' do
 end
 
 get '/contact' do
+  erb :contact
+end
+
+post '/contact' do
   erb :contact
 end
