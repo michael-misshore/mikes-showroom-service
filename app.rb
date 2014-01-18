@@ -36,5 +36,9 @@ post '/contact' do
     field :email,   :present => true, :email => true
   end
 
-  erb :contact
+  if form.failed?
+    erb :contact
+  else
+    erb :contact_confirmation
+  end
 end
