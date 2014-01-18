@@ -4,6 +4,7 @@ ruby '2.0.0'
 
 gem 'sinatra'
 gem 'sinatra-formkeeper'
+gem 'pony'
 
 group :production do
   gem 'rack'
@@ -11,6 +12,6 @@ group :production do
   gem 'unicorn'
 end
 
-group :development do
+group :development, :test do
   gem 'pry-nav'
 end
