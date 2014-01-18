@@ -145,3 +145,7 @@ p.service-preview a.after img {
 .jumbotron p.lead {
   font-weight: normal;
 }
+
+.form-group {
+  padding-bottom: 28px;
+}
