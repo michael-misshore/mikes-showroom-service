@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 require 'sinatra'
+require 'sinatra/formkeeper'
 
 configure :development do
   require 'pry'
@@ -29,5 +30,11 @@ get '/contact' do
 end
 
 post '/contact' do
+  form do
+    filters :strip
+    field :subject, :present => true
+    field :email,   :present => true, :email => true
+  end
+
   erb :contact
 end
