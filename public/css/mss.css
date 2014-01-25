@@ -146,6 +146,10 @@ p.service-preview a.after img {
   font-weight: normal;
 }
 
+.jumbotron .btn {
+  white-space: normal;
+}
+
 .form-group {
   padding-bottom: 28px;
 }
