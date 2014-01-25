@@ -87,7 +87,7 @@ p.service-preview {
 }
 
 p.service-preview img {
-  border: 5px solid black;
+  border: 2px solid black;
 }
 
 p.service-preview a.full img {
@@ -100,17 +100,17 @@ p.service-preview a.before {
 }
 
 p.service-preview a.before img {
-  border-right: 2.5px solid black;
+  border-right: 1px solid black;
 }
 
 p.service-preview a.after img {
-  border-left: 2.5px solid black;
+  border-left: 1px solid black;
 }
 
 p.service-preview a.before img,
 p.service-preview a.after img {
   height: 180px;
-  width: 185px;
+  width: 180px;
 }
 
 
