@@ -5,6 +5,7 @@ ruby '2.0.0'
 gem 'sinatra'
 gem 'sinatra-formkeeper'
 gem 'pony'
+gem 'dotenv'
 
 group :production do
   gem 'rack'

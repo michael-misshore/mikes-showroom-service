@@ -2,6 +2,7 @@ GEM
   remote: http://rubygems.org/
   specs:
     coderay (1.1.0)
+    dotenv (0.9.0)
     formkeeper (0.0.13)
       hpricot
       rack
@@ -49,6 +50,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  dotenv
   newrelic_rpm
   pony
   pry-nav
