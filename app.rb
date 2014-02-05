@@ -1,7 +1,10 @@
 #!/usr/bin/env ruby
 require 'sinatra'
 require 'sinatra/formkeeper'
+require 'dotenv'
 require 'pony'
+
+Dotenv.load
 
 configure :development, :test do
   require 'pry'
