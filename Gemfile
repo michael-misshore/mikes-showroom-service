@@ -16,3 +16,8 @@ end
 group :development, :test do
   gem 'pry-nav'
 end
+
+group :development do
+  gem 'capistrano', '~> 3.1.0'
+  gem 'capistrano3-unicorn', require: false
+end
