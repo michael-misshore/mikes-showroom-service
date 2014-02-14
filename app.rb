@@ -21,6 +21,7 @@ end
 
 configure :production do
   require 'newrelic_rpm'
+  NewRelic::Agent.after_fork(:force_reconnect => true)
 
   set :static_cache_control, [:public, max_age: 60 * 60 * 24 * 7]
   set :email_options, {
