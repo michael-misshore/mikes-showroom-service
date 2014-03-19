@@ -23,7 +23,7 @@ GEM
     net-scp (1.1.2)
       net-ssh (>= 2.6.5)
     net-ssh (2.8.0)
-    newrelic_rpm (3.6.6.147)
+    newrelic_rpm (3.7.3.204)
     polyglot (0.3.3)
     pony (1.6.2)
       mail (>= 2.0)
