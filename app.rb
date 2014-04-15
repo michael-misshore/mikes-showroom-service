@@ -67,10 +67,12 @@ post '/contact' do
   if form.failed?
     erb :contact
   else
-    Pony.mail to: 'mmisshore@gmail.com',
-              from: params[:email],
-              subject: params[:subject],
-              body: params[:message]
+    if params[:title].empty?
+      Pony.mail to: 'mmisshore@gmail.com',
+                from: params[:email]),
+                subject: h(params[:subject]),
+                body: h(params[:message])
+    end
 
     erb :contact_confirmation
   end
