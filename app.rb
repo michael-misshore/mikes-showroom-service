@@ -3,6 +3,7 @@ require 'sinatra'
 require 'sinatra/formkeeper'
 require 'dotenv'
 require 'pony'
+require './helpers.rb'
 
 Dotenv.load
 
