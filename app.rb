@@ -69,7 +69,7 @@ post '/contact' do
   else
     if params[:title].empty?
       Pony.mail to: 'mmisshore@gmail.com',
-                from: params[:email]),
+                from: params[:email],
                 subject: h(params[:subject]),
                 body: h(params[:message])
     end
