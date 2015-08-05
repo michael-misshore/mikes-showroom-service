@@ -18,7 +18,8 @@ group :development, :test do
 end
 
 group :development do
-  gem 'capistrano', '~> 3.1.0'
+  gem 'capistrano', '~> 3.4.0'
   gem 'capistrano-rvm', require: false
+  gem 'capistrano-bundler', require: false
   gem 'capistrano3-unicorn', require: false
 end

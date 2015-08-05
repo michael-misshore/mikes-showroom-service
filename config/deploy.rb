@@ -1,8 +1,5 @@
-# config valid only for Capistrano 3.1
-lock '3.1.0'
-
-require 'capistrano3/unicorn'
-require 'capistrano/rvm'
+# config valid only for Capistrano 3.4
+lock '3.4.0'
 
 set :application, 'mikesshowroomservice.com'
 set :repo_url, 'git@github.com:michael-misshore/mikes-showroom-service.git'
