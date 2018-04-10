@@ -1,11 +1,8 @@
 #!/usr/bin/env ruby
 require 'sinatra'
 require 'sinatra/formkeeper'
-require 'dotenv'
 require 'pony'
 require './helpers.rb'
-
-Dotenv.load
 
 configure :development, :test do
   require 'pry'
@@ -20,7 +17,7 @@ configure :development, :test do
   }
 end
 
-configure :deployment do
+configure :production do
   require 'newrelic_rpm'
   NewRelic::Agent.after_fork(:force_reconnect => true)
 

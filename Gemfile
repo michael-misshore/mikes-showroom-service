@@ -1,11 +1,11 @@
 source 'http://rubygems.org'
 
-ruby '2.4.3'
+ruby '2.5.0'
 
 gem 'sinatra'
 gem 'sinatra-formkeeper'
 gem 'pony'
-gem 'dotenv'
+gem 'rails_12factor'
 
 group :production do
   gem 'rack'
@@ -15,11 +15,4 @@ end
 
 group :development, :test do
   gem 'pry-nav'
-end
-
-group :development do
-  gem 'capistrano', '~> 3.4.0'
-  gem 'capistrano-rvm', require: false
-  gem 'capistrano-bundler', require: false
-  gem 'capistrano3-unicorn', require: false
 end
