@@ -17,7 +17,7 @@ configure :development, :test do
   }
 end
 
-configure :deployment do
+configure :production do
   require 'newrelic_rpm'
   NewRelic::Agent.after_fork(:force_reconnect => true)
 
