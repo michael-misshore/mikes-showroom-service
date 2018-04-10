@@ -1,11 +1,12 @@
 source 'http://rubygems.org'
 
-ruby '2.5.1'
+ruby '2.5.0'
 
 gem 'sinatra'
 gem 'sinatra-formkeeper'
 gem 'pony'
 gem 'dotenv'
+gem 'rails_12factor'
 
 group :production do
   gem 'rack'
